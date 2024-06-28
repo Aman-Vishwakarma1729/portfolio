@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+#header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/work_background_1.gif);
+    background-repeat: no-repeat; 
+    background-size: auto;  
+    background-position: right;
+    margin-top: -50px;
+}
+
+.container{
+    padding: 2px 2%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    margin-left: 50px;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FF004F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.my-work {
+    position: relative;
+    overflow: hidden;
+}
+
+.my-work img {
+    width: 100%;
+    display: block;
+}
+
+.my-work:hover .layer {
+    opacity: 1;
+}
+
+.layer p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.my-work{
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+
+.my-work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#FF004F);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.3s;
+}
+
+.layer h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #FF004F;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.my-work:hover img{
+    transform: scale(1.1);
+}
+
+.my-work:hover .layer{
+    height: 100%;
+}
+
+/*------------------------------------------CSS FOR SMALL SCREEENS----------------------------------------*/
+
+@media only screen and (max-width: 600px){
+    #header {
+        width: 100%;
+        height: 60vh;
+        background-image: url(images/work_background_1-phone.gif);
+        background-repeat: no-repeat; 
+        background-size: auto;  
+        background-position: right;
+        margin-top: -50px;
+    }
+
+    .logo{
+        width: 250px;
+        margin-left: 5px;
+        margin-top: -20px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #FF004F;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav .fa-solid.fa-bars{
+        display: block;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+    
+    .my-work{
+       border-radius: 10px;
+       position: relative;
+       overflow: hidden;
+    }
+    
+    .my-work img{
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.3s;
+    }
+}

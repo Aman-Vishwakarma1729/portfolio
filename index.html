@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comapatible" content="IE=edge">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <title>Aman Vishwakarma Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/605f5f281e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-----------------------------------------------------------------------------------HOME------------------------------------------------------------------------------>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" onclick="location.reload();">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Works</a></li>
+                    <li><a href="accomplishment.html">Accomplishments</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p id="typewriter"></p>
+            </div>
+            <div class="header-text-h1">
+                <h1>Hi, I'am <span>AMAN</span> VISHWAKARMA</h1>
+           </div>
+         </div>
+    </div>
+<!-----------------------------------------------------------------------------------ABOUT------------------------------------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.JPG" alt="aman-vishwakarma">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me:</h1>
+                    <p class="about-text">I am Aman Vishwakarma, a passionate Data Scientist currently pursuing my Masters in Data Science from 
+                    Vellore Institute of Technology. I have honed my skills in machine learning, computer vision, and natural language processing 
+                    through hands-on projects and internships. In addition to my technical skills, I am committed to continuous learning and professional 
+                    growth. Beyond my academic and professional pursuits, I actively engage in community service through the National Service Scheme (NSS), 
+                    where I have led various initiatives aimed at social betterment. I am excited to connect with like-minded professionals and explore 
+                    opportunities to apply my expertise in data science to solve real-world problems and drive meaningful impact.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="education" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" data-tab="skills" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" data-tab="experience" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" data-tab="volunteer-experience" onclick="openTab('volunteer-experience')">Volunteer Experience</p>
+                        <p class="tab-links" data-tab="hobbies" onclick="openTab('hobbies')">Hobbies</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2023 - 2025</span><br>MSc. Data Science<br>Vellore Institute of Technology, Chennai, Tamil Nadu, India.<br>CGPA: 9.00</li>
+                            <li><span>2019 - 2022</span><br>BSc. Mathematics<br>University of Mumbai, Maharashtra, India.<br>CGPA: 9.24</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <div class="skill-row">
+                            <div class="skill-row-1">
+                                <ul>
+                                    <li><span>Mathematics</span></li>
+                                    <li><span>Statistics</span></li>
+                                    <li><span>Python</span></li>
+                                    <li><span>R</span></li>
+                                    <li><span>SQL</span></li>
+                                    <li><span>Mongo-DB</span></li>
+                                    <li><span>Web-Scrapping</span></li>
+                                    <li><span>Numpy</span></li>
+                                    <li><span>Pandas</span></li>
+                                    <li><span>Data Visualization</span></li>
+                                    <li><span>Exploratory Data Anaysis</span></li>
+                                    <li><span>Feature Engineering</span></li>
+                                    <li><span>Sci-kit Learn</span></li>
+                                    <li><span>Machine Learning</span></li>
+                                </ul>
+                            </div>
+                            <div class="skill-row-2">
+                                <ul>
+                                    <li><span>Time Series</span></li>
+                                    <li><span>Tensorflow</span></li>
+                                    <li><span>Keras</span></li>
+                                    <li><span>Deep Learning</span></li>
+                                    <li><span>Computer Vision</span></li>
+                                    <li><span>Roboflow</span></li>
+                                    <li><span>Natural Language Processing</span></li>
+                                    <li><span>Artificial Intelligence</span></li>
+                                    <li><span>Power-BI</span></li>
+                                    <li><span>Flask</span></li>
+                                    <li><span>Docker</span></li>
+                                    <li><span>Git-Hub</span></li>
+                                    <li><span>JIRA</span></li>
+                                    <li><span>Software-Testing</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AI-ML intern at <b><cname1> SpectoV </cname1></b> (May 2024 - Present) </span><br><p>At SpectoV, I am working on pioneering 
+                                AI-ML projects that form the backbone of our assistive technologies in AR/VR. My responsibilities include:</p>
+                                <ul>
+                                   <li> <i> - Developing machine learning models that recognize gesture languages using computer vision and convert them into real-time audio.</i></li> 
+                                   <li> <i> - tunning models and creating lightweight versions for integration into edge devices like AR glasses.</i></li>
+                                   <li> <i> - Developing AI systems that convert audio into gestures, enhancing accessibility and communication.</i></li>
+                                </ul> 
+                                <p>This role allows me to contribute to groundbreaking technologies that bridge communication gaps and promote inclusivity in 
+                                immersive AR/VR environments.</p></li>
+
+                            <li><span>Data Science intern at <b><cname1> Physics Wallah Pvt Ltd. </cname1></b> (July 2023 - January 2024) </span> <br>
+                                <p>At Physics Wallah i had worked on computer vision realted task from healthcare domain and learned about end-to-end deep learning and machine 
+                                    learning workflow</p>
+                                 <ul>
+                                    <li><i><p> - Led the development of a holistic BMI prediction solution, integrating deep computer vision, modular
+                                                 workflows, and data scraping techniques for facial images,demonstrating expertisein Python,TensorFlow,
+                                                 Flask, and webscraping.</p></i></li>
+                                    <li><i><p> - Orchestrated a seamless end-to-end workflow, encompassing datascraping, image processing, and BMI
+                                                 prediction, with streamlined CI-CD deployment on AWS uing Git-Hub Actions and Amazon-ECR,
+                                                 highlighting skills in version control ,containerization, and cloud technologies.</p></i></li>
+                                 </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="volunteer-experience">
+                        <ul>
+                            <li><span>NSS (National Service Scheme) (2019 - 2020)</span><br>
+                                <p>During my tenure with NSS, I actively engaged in community service initiatives focusing on environmental conservation, 
+                                   public health, and educational support for underprivileged children. Key contributions include:</p>
+                                <ul>
+                                    <li><i><p> <b> - Tree Planting:</b> Participated in tree planting drives, enhancing local green cover.</p></i></li>
+                                    <li><i><p> <b> - Road Cleaning:</b> Conducted community cleanup activities to improve public spaces.</p></i></li>
+                                    <li><i><p> <b> - Blood Donation Drives: </b> Organized and coordinated blood donation camps, ensuring efficient operations.</p></i></li>
+                                    <li><i><p> <b> - Health Awareness Campaigns:</b> Distributed health information and educated the community on hygiene, nutrition, and disease prevention.</p></i></li>
+                                    <li><i><p> <b> - Teaching Underprivileged Children:</b> Taught and mentored children to improve their literacy and numeracy skills.</p></i></li>
+                                    <li><i><p> <b> - Study Material Distribution:</b> Managed the distribution of educational resources to support academic success.</p></i></li>
+                                    <li><i><p> <b> - Event Coordination:</b> Led variousonducted community cleanup NSS events, showcasing strong organizational skills.</p></i></li>
+                                    <li><i><p> <b> - Community Engagement:</b> Mobilized resources and volunteers to address community needs.</p></i></li>
+                                </ul>
+                                <p>Through these activities, I developed leadership skills, a sense of social responsibility, and made meaningful contributions to my community.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Trekking</span>
+                            <li><span>Swimming</span>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------------------------------------------------------------------WORK------------------------------------------------------------------------------>
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="my-work">
+                    <img src="images/work-1.jpeg" alt="script-vision">
+                    <div class="layer">
+                        <h3><b>Script Vision Advance Handwritten Text Recognition</b></h3>
+                        <p>A Computer Vision and NLP based model that recognizes the Handwritten text and convert them to digital text form</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="my-work">
+                    <img src="images/work-2.png" alt="housing-price">
+                    <div class="layer">
+                        <h3><b>House Price Prediction</b></h3>
+                        <p>Housing price data deep analysis and model building, model fine tunning and house price prediction</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="my-work">
+                    <img src="images/work-3.png" alt="bmi-prediction">
+                    <div class="layer">
+                        <h3><b>Body Mass Index Prediction from Face Images</b></h3>
+                        <p>This project uses DEEP COMPUTER VISION for predicting BODY MASS INDEX from facial images with Web-Scrapping and end-to-end workflow</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="works.html" class="btn">See more</a>
+        </div>
+    </div>
+<!-----------------------------------------------------------------------------------CONTACT------------------------------------------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>amansharma1729ds@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-7021599617</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/amanvishds" target="_blank"><i class="fa-brands fa-linkedin-in" alt="linkedin"></i></a>
+                        <a href="https://github.com/Aman-Vishwakarma1729" target="_blank"><i class="fa-brands fa-github" alt="github"></i></a>
+                        <a href="https://www.instagram.com/_aman___vishwakarma_/" target="_blank"><i class="fa-brands fa-instagram" alt="instagram"></i></a>
+                    </div>
+                    <a href="images/my_cv.pdf" download class="btn">Download resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your e-mail" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <input type="hidden" name="datetime" id="datetime">
+                        <div class="form-submit">
+                            <button type="submit" class="btn2">Submit</button>
+                        </div>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Aman Vishwakarma. <i class="fa-solid fa-user"></i></p>
+        </div>
+    </div>
+
+ 
+<!--------------------------------------JS------------------------------------------->
+    <script src="script.js"></script>
+<!----------------------------------------------------------------------------------->
+
+</body>
+</html>
