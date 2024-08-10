@@ -294,6 +294,33 @@ nav ul li a:hover::after{
     background: #FF004F;
 }
 
+.github-link{
+    display: inline-block;
+    font-size: 18px;
+    color: #FF004F;
+    text-decoration: none;
+    border: 1px solid #FF004F;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.layer a.github-link {
+    margin-top: 20px;
+    color: #FF004F;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 3; /* Add z-index */
+    position: relative; /* Ensure it's positioned relative to its parent */
+}
+
 /*------------------------------------------CONTACT----------------------------------------*/
 
 .contact-left{
