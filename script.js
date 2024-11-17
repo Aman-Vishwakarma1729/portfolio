@@ -105,3 +105,19 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
     })
 
+//----------------  ---------------------------------------------------------------------------------------------
+
+const accordionButtons = document.querySelectorAll(".accordion-button");
+accordionButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    const content = button.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      content.style.padding = "0 15px";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.padding = "10px 15px";
+    }
+  });
+});

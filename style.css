@@ -537,9 +537,91 @@ nav .fa-solid{
 }
 
 /*------------------------------------------MESSAGE SENT SUCESSFULLY---------------------------------------*/
-
-#msg{
-   color: #61b752;
-   margin-top: -5px;
-   display: block;
+body {
+background-color: black;
+color: white;
+font-family: Arial, sans-serif;
 }
+
+.accordion {
+background-color: black;
+color: white;
+border-radius: 5px;
+overflow: hidden;
+}
+
+.accordion-item {
+margin-bottom: 10px;
+}
+
+.accordion-button {
+width: 100%;
+background-color: rgb(54, 50, 50);
+color: white;
+border: none;
+padding: 15px;
+text-align: left;
+font-size: 16px;
+font-weight: bold;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+background-color: #555;
+}
+
+.accordion-button .role-company {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.accordion-button .company-name {
+font-weight: bold;
+opacity: 0.9;
+}
+
+.accordion-button .date {
+font-size: 14px;
+opacity: 0.8;
+text-align: right;
+margin-left: auto;
+margin-right: 20px;
+}
+
+.accordion-button::after {
+content: "▼";
+font-size: 12px;
+transform: rotate(0deg);
+transition: transform 0.3s;
+}
+
+.accordion-button.active::after {
+transform: rotate(180deg);
+}
+
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+background-color: black;
+color: white;
+padding: 0 15px;
+transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p, .accordion-content ul {
+padding: 10px 0;
+}
+
+.accordion-content ul {
+list-style-type: none;
+padding-left: 15px;
+}
+
+.accordion-content ul li {
+margin: 5px 0;
+}
+
