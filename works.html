@@ -9,101 +9,171 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo" onclick="location.reload();">
-                <ul id="sidemenu">
-                    <li><a href="index.html#header">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="accomplishment.html">Accomplishments</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="header-text">
+                <h1>My <span class="auto-type"></span></h1>
+                <h2>Showcasing my journey through code and creativity</h2>
+            </div>
+            <nav class="nav-wrapper">
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <div class="menu-icon">
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-ribbon">
+                    <div class="close-btn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="works.html" class="active">Works</a></li>
+                        <li><a href="accomplishment.html">Accomplishments</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
 
     <div id="work">
         <div class="container">
-            <h1 class="sub-title"></h1>
             <div class="work-list">
                 <div class="my-work">
                     <img src="project_images/AeroTrack_AI.webp" alt="AeroTrack_AI">
                     <div class="layer">
-                        <h3><b>Bird vs Drone Detection and Tracking using YOLOv8</b></h3>
-                        <p>An end-to-end computer vision project utilizing YOLOv8 Nano to detect and track birds and drones in real-time</p>
-                        <p>The system ensures efficient detection and precise tracking, designed for applications in wildlife monitoring and airspace safety.</p>
-                        <a href="https://aman-vishwakarma-bird-vs-drone-detection-and-tracking.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/Birds-vs-Drones-Detection-and-Tracking-System" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>Bird vs Drone Detection and Tracking</h3>
+                            <p>An end-to-end computer vision project utilizing YOLOv8 Nano to detect and track birds and drones in real-time. The system ensures efficient detection and precise tracking, designed for applications in wildlife monitoring and airspace safety.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-bird-vs-drone-detection-and-tracking.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/Birds-vs-Drones-Detection-and-Tracking-System" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="my-work">
-                    <img src="project_images/ProsePredictor.jpeg" alt="sIMDBRNNmoodanalyzer">
+                    <img src="project_images/ProsePredictor.jpeg" alt="ProsePredictor">
                     <div class="layer">
-                        <h3><b>ProsePredict: Advanced LSTM & GRU Text Forecasting</b></h3>
-                        <p>A Natural Language Processing based next word prediction system using LSTM and GRU totally customizable as per personal data</p>
-                        <a href="https://aman-vishwakarma-prosepredict.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/ProsePredict" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>ProsePredict: Text Forecasting</h3>
+                            <p>A Natural Language Processing based next word prediction system using LSTM and GRU, fully customizable for personal data. Advanced text generation with deep learning.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-prosepredict.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/ProsePredict" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/Watch-Guard-AI.png" alt="Watch-Guard-AI">
                     <div class="layer">
-                        <h3><b>WATCH-GUARD-AI: Surveillance and Suspicious Activity Detection using LCRN                        </b></h3>
-                        <p> Surveillance using deep computer vision with end to end implementation using TensorFlow, OpenCV, Streamlit powered by LCRN</p>
-                        <a href="https://aman-vishwakarma-watchguard-ai.streamlit.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/WatchGuard-AI" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        
+                        <div class="project-content">
+                            <h3>WATCH-GUARD-AI: Surveillance</h3>
+                            <p>Advanced surveillance system using deep computer vision with TensorFlow, OpenCV, and Streamlit. Powered by LCRN for real-time suspicious activity detection.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-watchguard-ai.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/WatchGuard-AI" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/Infant_cry_analyzer.jpeg" alt="Infant-cry-analzer">
                     <div class="layer">
-                        <h3><b>Automatic Infant Cry Audio Classification for Differentiating Infant Cries Indicating Discomfort</b></h3>
-                        <p>Deep Leaning based application that classify infant crying audio powered by tensorflow and librosa and amazing work with audio data</p>
-                        <a href="https://infant-cry-analyzer-amanvishwakarma.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/Automatic_Infant_Cry_Audio_Classification" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>Infant Cry Audio Classification</h3>
+                            <p>Deep Learning based application that classifies infant crying audio powered by TensorFlow and Librosa for automatic detection of discomfort indicators.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://infant-cry-analyzer-amanvishwakarma.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/Automatic_Infant_Cry_Audio_Classification" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/MotionBoard.png" alt="MotionBoard">
                     <div class="layer">
-                        <h3><b>MotionBoard: Typing Powered by Hand Movements</b></h3>
-                        <p>Vitual keyboard using Computer Vision with the help of OpenCV and MediaPipe</p>
-                        <a href="https://github.com/Aman-Vishwakarma1729/MotionBoard" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>MotionBoard: Hand Movement Typing</h3>
+                            <p>Virtual keyboard using Computer Vision with OpenCV and MediaPipe for hands-free typing experience.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aman-Vishwakarma1729/Motion_Board" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/BMIPredictor.png" alt="BMI-Predictor">
                     <div class="layer">
-                        <h3><b>Body Mass Index Prediction from Face Images using Deep Computer Vision</b></h3>
-                        <p>BMI prediction using deep computer vision with end to end implementation using TensorFlow, OpenCV, AWS, Dockers, git-action, MongoDB</p>
-                        <a href="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>Body Mass Index Prediction from Face Images using Deep Computer Vision</h3>
+                            <p>BMI prediction using deep computer vision with end to end implementation using TensorFlow, OpenCV, AWS, Dockers, git-action, MongoDB</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/IMDBRNNmoodanalyzer.png" alt="IMDBRNNmoodanalyzer">
                     <div class="layer">
-                        <h3><b>IMDBMoodAnalyzer: RNN-Powered Sentiment Analysis of IMDB Movie Reviews</b></h3>
-                        <p>A Natural Language Processing based movie review sentiment anlayzer using RNN</p>
-                        <a href="https://aman-vishwakarma-imdbmoodanalyzerr.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/IMDBMoodAnalyzerr" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>IMDBMoodAnalyzer: RNN-Powered Sentiment Analysis of IMDB Movie Reviews</h3>
+                            <p>A Natural Language Processing based movie review sentiment analyzer using RNN</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-imdbmoodanalyzerr.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/IMDBMoodAnalyzerr" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
                     <img src="project_images/TextExtractoNLP.jpg" alt="TextExtractoNLP">
                     <div class="layer">
-                        <h3><b>TextExtractoNLP: Web data scrapping and feature extraction for NLP</b></h3>
-                        <p>A Natural Language Processing based DATA SCRAPPING and FEATURE GENERATION out of scrapped data</p>
-                        <a href="https://github.com/Aman-Vishwakarma1729/TextExtractoNLP" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>TextExtractoNLP: Web data scrapping and feature extraction for NLP</h3>
+                            <p>A Natural Language Processing based DATA SCRAPPING and FEATURE GENERATION out of scrapped data</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aman-Vishwakarma1729/TextExtractoNLP" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
     
@@ -113,7 +183,18 @@
     </div>
 
 <!--------------------------------------JS------------------------------------------->
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Projects", "Learnings" ,"Innovations", "Creations", "Portfolio"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 <!----------------------------------------------------------------------------------->
+
 </body>
 </html>

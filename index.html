@@ -13,19 +13,33 @@
 <body >
 <!-----------------------------------------------------------------------------------HOME------------------------------------------------------------------------------>
     <div id="header">
-         <div class="container">
-            <nav>
+        <div class="container">
+            <nav class="nav-wrapper">
                 <img src="images/logo.png" class="logo" onclick="location.reload();">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Works</a></li>
-                    <li><a href="accomplishment.html">Accomplishments</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class="menu-icon">
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-ribbon">
+                    <div class="close-btn">
+                        <div class="close-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <i class="fas fa-times"></i>
+                    <ul class="nav-links">
+                        <li><a href="#header" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Works</a></li>
+                        <li><a href="accomplishment.html">Accomplishments</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             
             <div class="header-text">
@@ -68,59 +82,47 @@
                     </div>
 
                     <div class="tab-contents" id="skills">
-                        <div class="skill-row">
-                            <div class="skill-row-1">
-                                <ul>
-                                    <li><span>Mathematics</span></li>
-                                    <li><span>Statistics</span></li>
-                                    <li><span>Python</span></li>
-                                    <li><span>R</span></li>
-                                    <li><span>SQL</span></li>
-                                    <li><span>Mongo-DB</span></li>
-                                    <li><span>Web-Scrapping</span></li>
-                                    <li><span>Numpy</span></li>
-                                    <li><span>Pandas</span></li>
-                                    <li><span>Data Visualization</span></li>
-                                    <li><span>Exploratory Data Anaysis</span></li>
-                                    <li><span>Feature Engineering</span></li>
-                                    <li><span>Sci-kit Learn</span></li>
-                                    <li><span>Machine Learning</span></li>
-                                </ul>
-                            </div>
-                            <div class="skill-row-2">
-                                <ul>
-                                    <li><span>Time Series</span></li>
-                                    <li><span>Tensorflow</span></li>
-                                    <li><span>Keras</span></li>
-                                    <li><span>Deep Learning</span></li>
-                                    <li><span>Computer Vision</span></li>
-                                    <li><span>Roboflow</span></li>
-                                    <li><span>Natural Language Processing</span></li>
-                                    <li><span>Artificial Intelligence</span></li>
-                                    <li><span>Power-BI</span></li>
-                                    <li><span>Flask</span></li>
-                                    <li><span>Docker</span></li>
-                                    <li><span>Git-Hub</span></li>
-                                    <li><span>JIRA</span></li>
-                                    <li><span>Software-Testing</span></li>
-                                </ul>
-                            </div>
-                            <div class="skill-row-3">
-                                <ul>
-                                    <li><span>Generative AI</span></li>
-                                    <li><span>Graph Database (Neo4j)</span></li>
-                                    <li><span>Vector Database (Chroma, Pinecone, FAISS)</span></li>
-                                    <li><span>Lanhchain</span></li>
-                                    <li><span>HuggingFace</span></li>
-                                    <li><span>LLM's</span></li>
-                                    <li><span>MLOps</span></li>
-                                    <li><span>MLflow</span></li>
-                                    <li><span>DVC (Data Version Control)</span></li>
-                                    <li><span>DagsHub</span></li>
-                                    <li><span>Airflow</span></li>
-                                    <li><span>Grafana</span></li>                            
-                                </ul>
-                            </div>
+                        <div class="skills-grid">
+                            <div class="skill-item"><span>Mathematics</span></div>
+                            <div class="skill-item"><span>Statistics</span></div>
+                            <div class="skill-item"><span>Python</span></div>
+                            <div class="skill-item"><span>R</span></div>
+                            <div class="skill-item"><span>SQL</span></div>
+                            <div class="skill-item"><span>MongoDB</span></div>
+                            <div class="skill-item"><span>Web Scraping</span></div>
+                            <div class="skill-item"><span>NumPy</span></div>
+                            <div class="skill-item"><span>Pandas</span></div>
+                            <div class="skill-item"><span>Data Visualization</span></div>
+                            <div class="skill-item"><span>Exploratory Data Analysis</span></div>
+                            <div class="skill-item"><span>Feature Engineering</span></div>
+                            <div class="skill-item"><span>Scikit-Learn</span></div>
+                            <div class="skill-item"><span>Machine Learning</span></div>
+                            <div class="skill-item"><span>Time Series</span></div>
+                            <div class="skill-item"><span>TensorFlow</span></div>
+                            <div class="skill-item"><span>Keras</span></div>
+                            <div class="skill-item"><span>Deep Learning</span></div>
+                            <div class="skill-item"><span>Computer Vision</span></div>
+                            <div class="skill-item"><span>Roboflow</span></div>
+                            <div class="skill-item"><span>Natural Language Processing</span></div>
+                            <div class="skill-item"><span>Artificial Intelligence</span></div>
+                            <div class="skill-item"><span>Power BI</span></div>
+                            <div class="skill-item"><span>Flask</span></div>
+                            <div class="skill-item"><span>Docker</span></div>
+                            <div class="skill-item"><span>GitHub</span></div>
+                            <div class="skill-item"><span>JIRA</span></div>
+                            <div class="skill-item"><span>Software Testing</span></div>
+                            <div class="skill-item"><span>Generative AI</span></div>
+                            <div class="skill-item"><span>Graph Database (Neo4j)</span></div>
+                            <div class="skill-item"><span>Vector Databases</span></div>
+                            <div class="skill-item"><span>Langchain</span></div>
+                            <div class="skill-item"><span>HuggingFace</span></div>
+                            <div class="skill-item"><span>LLMs</span></div>
+                            <div class="skill-item"><span>MLOps</span></div>
+                            <div class="skill-item"><span>MLflow</span></div>
+                            <div class="skill-item"><span>DVC</span></div>
+                            <div class="skill-item"><span>DagsHub</span></div>
+                            <div class="skill-item"><span>Airflow</span></div>
+                            <div class="skill-item"><span>Grafana</span></div>
                         </div>
                     </div>
 
@@ -218,41 +220,65 @@
 <!-----------------------------------------------------------------------------------WORK------------------------------------------------------------------------------>
     <div id="work">
         <div class="container">
-            <h1 class="sub-title">My Works</h1>
+            <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="my-work">
                     <img src="project_images/AeroTrack_AI.webp" alt="AeroTrack_AI">
                     <div class="layer">
-                        <h3><b>Bird vs Drone Detection and Tracking using YOLOv8</b></h3>
-                        <p>An end-to-end computer vision project utilizing YOLOv8 Nano to detect and track birds and drones in real-time</p>
-                        <p>The system ensures efficient detection and precise tracking, designed for applications in wildlife monitoring and airspace safety.</p>
-                        <a href="https://aman-vishwakarma-bird-vs-drone-detection-and-tracking.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/Birds-vs-Drones-Detection-and-Tracking-System" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>Bird vs Drone Detection and Tracking</h3>
+                            <p>An end-to-end computer vision project utilizing YOLOv8 Nano to detect and track birds and drones in real-time. The system ensures efficient detection and precise tracking, designed for applications in wildlife monitoring and airspace safety.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-bird-vs-drone-detection-and-tracking.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/Birds-vs-Drones-Detection-and-Tracking-System" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="my-work">
-                    <img src="project_images/Watch-Guard-AI.png" alt="Watch-Guard-AI">
+                    <img src="project_images/ProsePredictor.jpeg" alt="ProsePredictor">
                     <div class="layer">
-                        <h3><b>WATCH-GUARD-AI: Surveillance and Suspicious Activity Detection using LCRN                        </b></h3>
-                        <p> Surveillance using deep computer vision with end to end implementation using TensorFlow, OpenCV, Streamlit powered by LCRN</p>
-                        <a href="https://aman-vishwakarma-watchguard-ai.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/WatchGuard-AI" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        
+                        <div class="project-content">
+                            <h3>ProsePredict: Text Forecasting</h3>
+                            <p>A Natural Language Processing based next word prediction system using LSTM and GRU, fully customizable for personal data. Advanced text generation with deep learning.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-prosepredict.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/ProsePredict" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="my-work">
-                    <img src="project_images/Infant_cry_analyzer.jpeg" alt="Infant-cry-analzer">
+                    <img src="project_images/Watch-Guard-AI.png" alt="Watch-Guard-AI">
                     <div class="layer">
-                        <h3><b>Automatic Infant Cry Audio Classification for Differentiating Infant Cries Indicating Discomfort</b></h3>
-                        <p>Deep Leaning based application that classify infant crying audio powered by tensorflow and librosa and amazing work with audio data</p>
-                        <a href="https://infant-cry-analyzer-amanvishwakarma.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729/Automatic_Infant_Cry_Audio_Classification" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-content">
+                            <h3>WATCH-GUARD-AI: Surveillance</h3>
+                            <p>Advanced surveillance system using deep computer vision with TensorFlow, OpenCV, and Streamlit. Powered by LCRN for real-time suspicious activity detection.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aman-vishwakarma-watchguard-ai.streamlit.app/" target="_blank" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/Aman-Vishwakarma1729/WatchGuard-AI" target="_blank" title="View Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="works.html" class="btn">See more</a>
+            <div class="see-more-container">
+                <a href="works.html" class="see-more-btn">See More Projects</a>
+            </div>
         </div>
     </div>
 <!-----------------------------------------------------------------------------------CONTACT------------------------------------------------------------------------------>
@@ -261,34 +287,33 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i>amansharma1729ds@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+91-7021599617</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>amanvishwakarma1729@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9340538561</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/amanvishds" target="_blank"><i class="fa-brands fa-linkedin-in" alt="linkedin"></i></a>
-                        <a href="https://github.com/Aman-Vishwakarma1729" target="_blank"><i class="fa-brands fa-github" alt="github"></i></a>
-                        <a href="https://www.instagram.com/_aman___vishwakarma_/" target="_blank"><i class="fa-brands fa-instagram" alt="instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/amanvishds" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Aman-Vishwakarma1729" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_aman___vishwakarma_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <a href="images/my_cv.pdf" download class="btn">Download resume</a>
+                    <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
 
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your e-mail" required>
+                        <input type="text" name="Name" placeholder="Your Name" required autocomplete="off">
+                        <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <input type="hidden" name="datetime" id="datetime">
-                        <div class="form-submit">
-                            <button type="submit" class="btn2">Submit</button>
-                        </div>
+                        <input type="hidden" id="datetime" name="datetime"> <!-- Hidden field for date and time -->
+                        <button type="submit" class="btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; Aman Vishwakarma. <i class="fa-solid fa-user"></i></p>
+            <p>Copyright &copy; Aman. Made with <i class="fa-solid fa-heart"></i> by Aman Vishwakarma</p>
         </div>
     </div>
+
 
  
 <!--------------------------------------JS------------------------------------------->

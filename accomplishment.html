@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Works</title>
+    <title>My Accomplishments</title>
     <link rel="stylesheet" href="style_accomplishment.css">
     <script src="https://kit.fontawesome.com/605f5f281e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="nav-wrapper">
                 <img src="images/logo.png" class="logo" onclick="location.reload();">
-                <ul id="sidemenu">
-                    <li><a href="index.html#header">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="works.html#work">Works</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class="menu-icon">
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-ribbon">
+                    <div class="close-btn">
+                        <div class="close-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="accomplishment.html" class="active">Accomplishments</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
@@ -175,8 +188,6 @@
             </div>
         </div>
     </div>
-    <!--------------------------------------JS------------------------------------------->
     <script src="script.js"></script>
-    <!----------------------------------------------------------------------------------->
 </body>
 </html>
