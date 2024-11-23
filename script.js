@@ -174,6 +174,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Initialize accomplishment typewriter effect
+    if (document.getElementById('accomplishment-typewriter')) {
+        typeAccomplishment();
+    }
 });
 
 // Form submission handler
@@ -222,4 +227,48 @@ function handleFormSubmit(e) {
                 }, 3000);
             }
         });
+}
+
+// Accomplishment Page Typewriter Effect
+const accomplishmentWords = [
+    "Certifications",
+    "Achievements"
+];
+
+let accomplishmentWordIndex = 0;
+let accomplishmentCharIndex = 0;
+let isRemovingAccomplishment = false;
+let currentAccomplishmentWord = '';
+
+function typeAccomplishment() {
+    const typewriterElement = document.getElementById('accomplishment-typewriter');
+    if (!typewriterElement) return;
+    
+    if (!isRemovingAccomplishment) {
+        currentAccomplishmentWord = accomplishmentWords[accomplishmentWordIndex].substring(0, accomplishmentCharIndex + 1);
+        typewriterElement.textContent = currentAccomplishmentWord;
+        accomplishmentCharIndex++;
+        
+        if (accomplishmentCharIndex === accomplishmentWords[accomplishmentWordIndex].length) {
+            isRemovingAccomplishment = true;
+            setTimeout(() => { typeAccomplishment(); }, delayBetweenWords);
+            return;
+        }
+    } else {
+        currentAccomplishmentWord = accomplishmentWords[accomplishmentWordIndex].substring(0, accomplishmentCharIndex - 1);
+        typewriterElement.textContent = currentAccomplishmentWord;
+        accomplishmentCharIndex--;
+        
+        if (accomplishmentCharIndex === 0) {
+            isRemovingAccomplishment = false;
+            accomplishmentWordIndex++;
+            if (accomplishmentWordIndex === accomplishmentWords.length) {
+                accomplishmentWordIndex = 0;
+            }
+            setTimeout(() => { typeAccomplishment(); }, typingSpeed);
+            return;
+        }
+    }
+    
+    setTimeout(typeAccomplishment, typingSpeed);
 }

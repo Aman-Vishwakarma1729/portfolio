@@ -441,6 +441,31 @@ body {
     animation: glow 2s infinite;
 }
 
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#accomplishment-typewriter {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+
+#accomplishment-typewriter::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .work-list {
@@ -471,11 +496,17 @@ body {
     #header {
         width: 100%;
         height: 60vh;
-        background-image: url(images/accomplishment_background_phone_1.gif);
-        background-repeat: no-repeat; 
-        background-size: auto;  
-        background-position: right;
-        margin-top: -50px;
+        background: linear-gradient(
+            135deg,
+            #000033,
+            #1a0b2e,
+            #261447,
+            #3d1d6c,
+            #261447,
+            #000033
+        );
+        background-size: 100% 100%;
+        animation: workGradient 15s ease infinite;
     }
 
     .work-list{
